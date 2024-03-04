@@ -11,7 +11,7 @@ public class Lista1Ex5 {
 		if (n == 0) {
 			return (double) 0;
 		} else {
-			//Decrementa "n" e soma o valon na funcao
+			//Decrementa "n" e soma o valor na funcao
 			return (double) 1 / n + funcao(n - 1);
 		}
 	}	
