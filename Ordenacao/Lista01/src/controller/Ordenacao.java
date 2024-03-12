@@ -9,21 +9,39 @@ public class Ordenacao {
 		super();
 	}
 	
-	public int [] bubblesort(int[] vetor) {
+	public int [] funbubble(int[] vetor) {
 		
 		BubbleSort bbst = new BubbleSort();
-		int [] nvetor = bbst.bubbleSort(vetor);
-		System.out.println(nvetor);
-		
-		return nvetor;
+		System.out.println(bbst);
+		return bbst.bubbleSort(vetor);
 	}
 	
-	public int [] mergesort(int[] vetor, int inicio, int fim) {
-		
+	public int [] funmerge(int[] vetor, int inicio, int fim) {
+
 		MergeSort mgst = new MergeSort();
-		int [] nvetor = mgst.mergeSort(vetor, inicio, fim);
-		System.out.println(nvetor);
+		System.out.println(mgst);
+		return mgst.mergeSort(vetor, inicio, fim);
+	}
+	
+	public void mostrabb(int[] vetor) {
 		
-		return nvetor;
+		System.out.println("");
+		System.out.println("========================================");
+		for (int valor : vetor) {
+			System.out.print(valor+" ");
+		}
+		System.out.println("");
+		System.out.println("========================================");
+	}
+	
+	public void mostramg(int[] vetor, int inicio, int fim) {
+		
+		System.out.println("");
+		System.out.println("========================================");
+		for (int valor : vetor) {
+			System.out.print(valor+" ");
+		}
+		System.out.println("");
+		System.out.println("========================================");
 	}
 }
